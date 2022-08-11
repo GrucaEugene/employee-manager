@@ -33,12 +33,12 @@ public class EmployeeService {
         return employeeRepository.findAll();
     }
 
-    public Employee update(Employee employee) {
+    public Employee updateEmployee(Employee employee) {
         return employeeRepository.save(employee);
     }
 
     public void deleteById(Long id) {
-        employeeRepository.deleteEmployeeById();
+        employeeRepository.deleteEmployeeById(id);
     }
 
 
